@@ -97,6 +97,8 @@ let showBtn = document.getElementById("show-favorite");
 showBtn.addEventListener("click", displayFavorite);
 
 function displayFavorite() {
+    let feed = document.getElementById("favorite-currency-pairs");
+    feed.innerHTML=""
     for (let i = 0; i < saveddata.length; i++) {
         let feed = document.getElementById("favorite-currency-pairs");
         let div = document.createElement('div');
